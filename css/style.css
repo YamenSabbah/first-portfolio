@@ -22,16 +22,16 @@ body {
 
 .Head .container {
   position: fixed;
-  display: flex;
   z-index: 100;
-  justify-content: space-between;
-  align-items: center;
   height: 80px;
-  width: 100%;
+  width: 100vw;
   background-color: rgba(48, 1, 255, 0.521);
 }
 .Head .links {
   margin-right: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .Head .links a {
   text-decoration: none;
@@ -270,30 +270,7 @@ footer .square2 {
   background-color: transparent;
   border: 5px solid rgba(0, 0, 0, 0.39);
 }
-footer .square2:nth-child(3) {
-  top: 2%;
-  left: 5%;
-  animation: a_2 6s linear infinite;
-}
-footer .square2:nth-child(4) {
-  bottom: 12%;
-  z-index: inherit;
-  animation: a_2 3.2s linear infinite;
-}
-footer .square2:nth-child(5) {
-  right: 50%;
-  animation: a_2 3.5s linear infinite;
-}
-footer .square2:nth-child(6) {
-  right: 20%;
-  top: 15%;
-  animation: a_2 4.2s linear infinite;
-}
-footer .square2:nth-child(7) {
-  left: 40%;
-  top: 20%;
-  animation: a_2 5.4s linear infinite;
-}
+
 @keyframes a_2 {
   from {
     scale: 0;
@@ -310,7 +287,7 @@ footer .square2:nth-child(7) {
 
 /*^ --------------------------------------> ​‌‍‌​‌‍‌𝗘𝗻𝗱 𝗼𝗳 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗽𝗮𝗴𝗲​​ <------------------------------ */
 
-/*& ------------------------------------------> ​‌‍‌‍𝗠𝗲𝗱𝗶𝗮 𝗤𝘂𝗲𝗿𝘆𝘀​ <-----------------------------*/
+/*# ------------------------------------------> ​‌‍‌‍𝗠𝗲𝗱𝗶𝗮 𝗤𝘂𝗲𝗿𝘆𝘀​ <-----------------------------*/
 @media (max-width: 600px) {
   .Head .square {
     width: 35px;
@@ -320,7 +297,7 @@ footer .square2:nth-child(7) {
 @media (max-width: 750px) {
   .Head .my-image h1 {
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.2em;
   }
   .Head .my-image .YamenImage {
     height: 200px;
@@ -330,7 +307,7 @@ footer .square2:nth-child(7) {
 
 @media (max-width: 750px) {
   .about .about-first h2 {
-    font-size: 1.2em;
+    font-size: 0.9em;
     text-align: center;
   }
   .about .about-first img {
@@ -344,11 +321,11 @@ footer .square2:nth-child(7) {
     margin: 0px 20px;
   }
   .about .about-second h2 {
-    font-size: 1.2em;
+    font-size: 0.9em;
     margin-left: 30px;
   }
   .about .about-third h2 {
-    font-size: 1.2em;
+    font-size: 0.9em;
     text-align: center;
     margin: 0px 20px;
   }
@@ -373,5 +350,19 @@ footer .square2:nth-child(7) {
   .Contact .square2 {
     width: 30px;
     height: 30px;
+  }
+  .Head .links a {
+    font-size: 1em;
+  }
+  @media (max-width: 450px) {
+    .Head .links a {
+      font-size: 15px;
+    }
+    .Head .Yamen-logo {
+      width: 20%;
+    }
+    .Head .links {
+      margin-top: 6px;
+    }
   }
 }
