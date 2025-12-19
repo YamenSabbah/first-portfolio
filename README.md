@@ -19,7 +19,7 @@ Welcome to my personal portfolio website! This project showcases my skills, educ
 
 ## 📸 Screenshots
 
-![image]<img width="1320" height="553" alt="image" src="https://github.com/user-attachments/assets/e95d6f1e-64e5-4078-aa73-62356ee53730" />
+<img width="1320" height="553" alt="image" src="https://github.com/user-attachments/assets/e95d6f1e-64e5-4078-aa73-62356ee53730" />
 
 
 ## 🔗 Connect with Me
