@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Portfolio of Yamen, a Computer Engineering student and Front-End Developer.">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Yamen | Portfolio</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header" id="home">
+      <nav class="navbar container">
+        <a href="#home" class="logo">
+          <img src="./images/Yamen_logo.png" alt="Yamen Logo" width="50" height="50">
+          <span>Yamen</span>
+        </a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      
+      <div class="hero container">
+        <div class="hero-content">
+            <h1>Hello, I'm Yamen.</h1>
+            <p>Computer Engineeering Student & Front-End Developer</p>
+            <a href="#contact" class="cta-button">Get in Touch</a>
+        </div>
+        <div class="hero-image">
+           <img src="./images/Yamen.png" alt="Yamen" class="profile-img"/>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Education</h3>
+                <p>Student at <strong>Kadoorie University</strong></p>
+                <p>Computer Engineering</p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Development</h3>
+                <p>Front-End Developer on the road to Full Stack.</p>
+            </div>
+            <div class="about-card">
+                <i class="fa-brands fa-cuttlefish"></i>
+                <h3>Skills</h3>
+                <p>C++, OOP, Data Structures, Algorithms, Git</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-links">
+            <a href="https://www.facebook.com/yamen.sabbah.39/about" target="_blank" class="social-link facebook">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+            <a href="https://discord.com/users/763845354311254088" target="_blank" class="social-link discord">
+                <i class="fa-brands fa-discord"></i>
+                <span>Discord</span>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Yamen. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
