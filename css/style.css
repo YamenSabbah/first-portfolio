@@ -1,367 +1,329 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-color: #6366f1; /* Indigo */
+  --secondary-color: #a855f7; /* Purple */
+  --accent-color: #06b6d4; /* Cyan */
+  --dark-bg: #0f172a; /* Slate 900 */
+  --light-bg: #1e293b; /* Slate 800 */
+  --text-color: #f8fafc; /* Slate 50 */
+  --text-muted: #94a3b8; /* Slate 400 */
+  --card-bg: rgba(30, 41, 59, 0.7);
+  --nav-bg: rgba(15, 23, 42, 0.8);
+  --border-radius: 1rem;
+  --transition: all 0.3s ease;
+  --container-width: 1200px;
+}
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+}
+
+html {
   scroll-behavior: smooth;
 }
+
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
 }
 
-/**----------------------------------------> ​‌‍‌‍𝗦𝘁𝗮𝗿𝘁 𝗼𝗳 𝘁𝗵𝗲 𝗛𝗲𝗮𝗱​ <------------------------------- */
-.Head {
-  background-color: rgba(48, 1, 255, 0.274);
-  height: 100vh;
-  position: relative;
-}
-
-.Head .container {
-  position: fixed;
-  z-index: 100;
-  height: 80px;
-  width: 100vw;
-  background-color: rgba(48, 1, 255, 0.521);
-}
-.Head .links {
-  margin-right: 25px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.Head .links a {
+a {
   text-decoration: none;
-  color: #000;
-  font-size: 22px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10%;
-  transition: 0.2s;
-}
-.Head .links a:hover {
-  background-color: rgb(174, 0, 255);
-}
-.Yamen-logo {
-  margin-left: 10px;
-  border-radius: 50%;
-}
-.Head .square {
-  width: 70px;
-  height: 70px;
-  background-color: transparent;
-  border: 4px solid blue;
-  position: absolute;
-  z-index: -1;
+  color: inherit;
 }
 
-.Head .square:nth-child(2) {
-  bottom: 34%;
-  left: 11%;
-  animation: a_1 5.3s linear infinite;
-}
-.Head .square:nth-child(3) {
-  bottom: 0%;
-  left: 5%;
-  animation: a_1 4s linear infinite;
-}
-.Head .square:nth-child(4) {
-  right: 50%;
-  top: 40%;
-  animation: a_1 10s linear infinite;
-}
-.Head .square:nth-child(5) {
-  right: 20%;
-  bottom: 0;
-  animation: a_1 4.5s linear infinite;
-}
-.Head .square:nth-child(6) {
-  right: 50%;
-  bottom: 0;
-  animation: a_1 7s linear infinite;
-}
-.Head .square:nth-child(7) {
-  left: 25%;
-  bottom: 0;
-  animation: a_1 3.5s linear infinite;
-}
-.Head .square:nth-child(8) {
-  right: 25%;
-  top: 25%;
-  animation: a_1 6.5s linear infinite;
-}
-.Head .square:nth-child(9) {
-  right: 5%;
-  bottom: 35%;
-  animation: a_1 3.5s linear infinite;
-}
-.Head .square:nth-child(10) {
-  right: 33%;
-  bottom: 20%;
-  animation: a_1 8s linear infinite;
-}
-.Head .square:nth-child(11) {
-  left: 30%;
-  top: 45%;
-  animation: a_1 4.5s linear infinite;
+ul {
+  list-style: none;
 }
 
-@keyframes a_1 {
-  from {
-    scale: 0;
-    opacity: 1;
-    translate: 0 0;
-  }
-
-  to {
-    rotate: 1turn;
-    opacity: 0;
-    scale: 1;
-    translate: 0 -250px;
-  }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
-.Head .my-image {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  position: absolute;
-  height: 350px;
-  top: 25%;
+
+/* Utilities */
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Header & Navbar */
+.header {
+  position: relative;
   width: 100%;
-}
-
-.YamenImage {
-  width: 300px;
-  height: 300px;
-  box-shadow: 0px 4px 25px rgb(51, 3, 223);
-  border-radius: 50%;
-}
-
-/** -------------------------------------------> ​‌‍‌𝗘𝗻𝗱 𝗼𝗳 𝗛𝗲𝗮𝗱​ <------------------------------------ */
-
-/*? ----------------------------------------> ​‌‍‌𝗦𝘁𝗮𝗿𝘁 𝗼𝗳 𝘁𝗵𝗲 𝗔𝗯𝗼𝘂𝘁​ <-------------------------------- */
-.about {
-  height: 750px;
-}
-.about .about-first {
-  background-color: rgba(0, 153, 255, 0.295);
-  height: 250px;
+  min-height: 100vh;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: column;
+  background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent 40%),
+              radial-gradient(circle at bottom left, rgba(6, 182, 212, 0.15), transparent 40%);
 }
-.about .about-first img {
-  width: 200px;
-  height: 200px;
-  box-shadow: 0px 4px 25px rgb(3, 153, 223);
-  border-radius: 50%;
-}
-.about .about-first h2 {
-  font-size: 1.8em;
-  margin: 10px;
-  text-align: center;
-  text-shadow: 0px 2px 20px rgb(3, 153, 223);
-}
-.about .about-first h2 span {
-  color: red;
-}
-.about .about-second {
+
+.navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  height: 250px;
-  background-color: rgba(0, 255, 136, 0.425);
+  padding: 1.5rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--nav-bg);
+  backdrop-filter: blur(10px);
+  max-width: 100%;
 }
-.about .about-second img {
-  width: 200px;
-  height: 200px;
-  box-shadow: 0px 4px 25px rgb(3, 223, 76);
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo img {
   border-radius: 50%;
 }
-.about .about-second h2 {
-  font-size: 1.8em;
-  margin: 10px;
-  text-shadow: 0px 2px 25px rgb(03, 223, 76);
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
 }
-.about .about-third {
+
+.nav-links a {
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px; /* Offset for fixed navbar */
+  gap: 4rem;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+  color: white;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   position: relative;
-  z-index: 1;
-  justify-content: space-around;
-  display: flex;
-  height: 250px;
-  background-color: rgba(142, 0, 170, 0.473);
-  align-items: center;
 }
-.about .about-third img {
-  width: 300px;
-  height: 200px;
+
+.profile-img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
   border-radius: 50%;
+  border: 4px solid var(--secondary-color);
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.5);
+  animation: float 6s ease-in-out infinite;
 }
-.about .about-third h2 {
-  font-size: 1.8em;
-  font-weight: bold;
-  text-shadow: 0px 2px 25px rgb(142, 0, 170);
-  width: 50%;
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+/* About Section */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.about-card {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
   text-align: center;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/*? ----------------------------------------> ​‌‍‌‍𝗘𝗻𝗱 𝗼𝗳 𝘁𝗵𝗲 𝗔𝗯𝗼𝘂𝘁​​ <-------------------------------- */
-
-/*^ --------------------------------------> ​‌‍‌‍𝗦𝘁𝗮𝗿𝘁 𝗼𝗳 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗽𝗮𝗴𝗲​​ <------------------------------ */
-.Contact {
-  position: relative;
-  height: 50vh;
-  background-color: #cec9c9;
-}
-footer .links {
-  padding-top: 20px;
-}
-footer .links h2 {
-  letter-spacing: 1px;
-  text-align: center;
-  font-size: 2em;
+.about-card:hover {
+  transform: translateY(-5px);
+  background: var(--light-bg);
+  border-color: var(--primary-color);
 }
 
-.icons-contact {
+.about-card i {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.about-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-card p {
+  color: var(--text-muted);
+}
+
+/* Contact Section */
+.contact-links {
   display: flex;
-  justify-content: space-around;
-  padding-top: 6em;
-  align-items: center;
+  justify-content: center;
+  gap: 3rem;
   flex-wrap: wrap;
 }
-.icons-contact a {
-  text-decoration: none;
-  font-size: 2em;
-  background-color: white;
-  border-radius: 20px;
-  padding: 5px;
-  transition: 0.2s;
-  width: 10em;
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  min-width: 180px;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-link i {
+  font-size: 3rem;
+}
+
+.social-link span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.social-link.facebook:hover {
+  color: #1877f2;
+  background: rgba(24, 119, 242, 0.1);
+  border-color: #1877f2;
+  transform: translateY(-5px);
+}
+
+.social-link.discord:hover {
+  color: #5865f2;
+  background: rgba(88, 101, 242, 0.1);
+  border-color: #5865f2;
+  transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
   text-align: center;
-  position: relative;
-  z-index: 1;
-}
-.icons-contact .first-link {
-  color: blue;
-  background-color: #eee;
-}
-.icons-contact .second-link {
-  color: #b197fc;
-  background-color: #eee;
-}
-.icons-contact .first-link:hover {
-  color: white;
-  background-color: blue;
-  transform: scale(1.05, 1.05);
-}
-.icons-contact .second-link:hover {
-  color: white;
-  background-color: #b197fc;
-  transform: scale(1.05, 1.05);
-}
-footer .square2 {
-  width: 55px;
-  height: 55px;
-  position: absolute;
-  background-color: transparent;
-  border: 5px solid rgba(0, 0, 0, 0.39);
+  padding: 2rem;
+  color: var(--text-muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 2rem;
 }
 
-@keyframes a_2 {
-  from {
-    scale: 0;
-    opacity: 1;
-    translate: 0 0;
-  }
-  to {
-    rotate: 1turn;
-    opacity: 0;
-    scale: 1;
-    translate: 250px 0;
-  }
-}
-
-/*^ --------------------------------------> ​‌‍‌​‌‍‌𝗘𝗻𝗱 𝗼𝗳 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗽𝗮𝗴𝗲​​ <------------------------------ */
-
-/*# ------------------------------------------> ​‌‍‌‍𝗠𝗲𝗱𝗶𝗮 𝗤𝘂𝗲𝗿𝘆𝘀​ <-----------------------------*/
-@media (max-width: 600px) {
-  .Head .square {
-    width: 35px;
-    height: 35px;
-  }
-}
-@media (max-width: 750px) {
-  .Head .my-image h1 {
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
     text-align: center;
-    font-size: 1.2em;
+    padding-top: 100px;
   }
-  .Head .my-image .YamenImage {
-    height: 200px;
-    width: 200px;
-  }
-}
 
-@media (max-width: 750px) {
-  .about .about-first h2 {
-    font-size: 0.9em;
-    text-align: center;
+  .hero-content h1 {
+    font-size: 2.5rem;
   }
-  .about .about-first img {
-    width: 150px;
-    height: 150px;
-    margin: 0px 20px;
+  
+  .profile-img {
+      width: 250px;
+      height: 250px;
   }
-  .about .about-second img {
-    width: 150px;
-    height: 150px;
-    margin: 0px 20px;
+
+  .menu-toggle {
+    display: block;
   }
-  .about .about-second h2 {
-    font-size: 0.9em;
-    margin-left: 30px;
-  }
-  .about .about-third h2 {
-    font-size: 0.9em;
-    text-align: center;
-    margin: 0px 20px;
-  }
-  .about .about-third img {
-    width: 150px;
-    height: 100px;
-    margin: 0px 20px;
-  }
-  .icons-contact {
-    font-size: 0.7em;
-    gap: 1em;
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    gap: 1.5rem;
     align-items: center;
-    justify-content: center;
+    transform: translateY(-150%);
+    transition: var(--transition);
+    z-index: 999;
   }
-  .icons-contact a {
-    width: 12em;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 600px) {
-  .Contact .square2 {
-    width: 30px;
-    height: 30px;
-  }
-  .Head .links a {
-    font-size: 1em;
-  }
-  @media (max-width: 450px) {
-    .Head .links a {
-      font-size: 15px;
-    }
-    .Head .Yamen-logo {
-      width: 20%;
-    }
-    .Head .links {
-      margin-top: 6px;
-    }
+
+  .nav-links.active {
+    transform: translateY(0);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
   }
 }
