@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/**----------------------------------------> ​‌‍‌‍𝗦𝘁𝗮𝗿𝘁 𝗼𝗳 𝘁𝗵𝗲 𝗛𝗲𝗮𝗱​ <------------------------------- */
+.Head {
+  background-color: rgba(48, 1, 255, 0.274);
+  height: 100vh;
+  position: relative;
+}
+
+.Head .container {
+  position: fixed;
+  z-index: 100;
+  height: 80px;
+  width: 100vw;
+  background-color: rgba(48, 1, 255, 0.521);
+}
+.Head .links {
+  margin-right: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Head .links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 22px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10%;
+  transition: 0.2s;
+}
+.Head .links a:hover {
+  background-color: rgb(174, 0, 255);
+}
+.Yamen-logo {
+  margin-left: 10px;
+  border-radius: 50%;
+}
+.Head .square {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border: 4px solid blue;
+  position: absolute;
+  z-index: -1;
+}
+
+.Head .square:nth-child(2) {
+  bottom: 34%;
+  left: 11%;
+  animation: a_1 5.3s linear infinite;
+}
+.Head .square:nth-child(3) {
+  bottom: 0%;
+  left: 5%;
+  animation: a_1 4s linear infinite;
+}
+.Head .square:nth-child(4) {
+  right: 50%;
+  top: 40%;
+  animation: a_1 10s linear infinite;
+}
+.Head .square:nth-child(5) {
+  right: 20%;
+  bottom: 0;
+  animation: a_1 4.5s linear infinite;
+}
+.Head .square:nth-child(6) {
+  right: 50%;
+  bottom: 0;
+  animation: a_1 7s linear infinite;
+}
+.Head .square:nth-child(7) {
+  left: 25%;
+  bottom: 0;
+  animation: a_1 3.5s linear infinite;
+}
+.Head .square:nth-child(8) {
+  right: 25%;
+  top: 25%;
+  animation: a_1 6.5s linear infinite;
+}
+.Head .square:nth-child(9) {
+  right: 5%;
+  bottom: 35%;
+  animation: a_1 3.5s linear infinite;
+}
+.Head .square:nth-child(10) {
+  right: 33%;
+  bottom: 20%;
+  animation: a_1 8s linear infinite;
+}
+.Head .square:nth-child(11) {
+  left: 30%;
+  top: 45%;
+  animation: a_1 4.5s linear infinite;
+}
+
+@keyframes a_1 {
+  from {
+    scale: 0;
+    opacity: 1;
+    translate: 0 0;
+  }
+
+  to {
+    rotate: 1turn;
+    opacity: 0;
+    scale: 1;
+    translate: 0 -250px;
+  }
+}
+.Head .my-image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  height: 350px;
+  top: 25%;
+  width: 100%;
+}
+
+.YamenImage {
+  width: 300px;
+  height: 300px;
+  box-shadow: 0px 4px 25px rgb(51, 3, 223);
+  border-radius: 50%;
+}
+
+/** -------------------------------------------> ​‌‍‌𝗘𝗻𝗱 𝗼𝗳 𝗛𝗲𝗮𝗱​ <------------------------------------ */
+
+/*? ----------------------------------------> ​‌‍‌𝗦𝘁𝗮𝗿𝘁 𝗼𝗳 𝘁𝗵𝗲 𝗔𝗯𝗼𝘂𝘁​ <-------------------------------- */
+.about {
+  height: 750px;
+}
+.about .about-first {
+  background-color: rgba(0, 153, 255, 0.295);
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about .about-first img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 4px 25px rgb(3, 153, 223);
+  border-radius: 50%;
+}
+.about .about-first h2 {
+  font-size: 1.8em;
+  margin: 10px;
+  text-align: center;
+  text-shadow: 0px 2px 20px rgb(3, 153, 223);
+}
+.about .about-first h2 span {
+  color: red;
+}
+.about .about-second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+  background-color: rgba(0, 255, 136, 0.425);
+}
+.about .about-second img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0px 4px 25px rgb(3, 223, 76);
+  border-radius: 50%;
+}
+.about .about-second h2 {
+  font-size: 1.8em;
+  margin: 10px;
+  text-shadow: 0px 2px 25px rgb(03, 223, 76);
+}
+.about .about-third {
+  position: relative;
+  z-index: 1;
+  justify-content: space-around;
+  display: flex;
+  height: 250px;
+  background-color: rgba(142, 0, 170, 0.473);
+  align-items: center;
+}
+.about .about-third img {
+  width: 300px;
+  height: 200px;
+  border-radius: 50%;
+}
+.about .about-third h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-shadow: 0px 2px 25px rgb(142, 0, 170);
+  width: 50%;
+  text-align: center;
+}
+
+/*? ----------------------------------------> ​‌‍‌‍𝗘𝗻𝗱 𝗼𝗳 𝘁𝗵𝗲 𝗔𝗯𝗼𝘂𝘁​​ <-------------------------------- */
+
+/*^ --------------------------------------> ​‌‍‌‍𝗦𝘁𝗮𝗿𝘁 𝗼𝗳 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗽𝗮𝗴𝗲​​ <------------------------------ */
+.Contact {
+  position: relative;
+  height: 50vh;
+  background-color: #cec9c9;
+}
+footer .links {
+  padding-top: 20px;
+}
+footer .links h2 {
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.icons-contact {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 6em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.icons-contact a {
+  text-decoration: none;
+  font-size: 2em;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  transition: 0.2s;
+  width: 10em;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.icons-contact .first-link {
+  color: blue;
+  background-color: #eee;
+}
+.icons-contact .second-link {
+  color: #b197fc;
+  background-color: #eee;
+}
+.icons-contact .first-link:hover {
+  color: white;
+  background-color: blue;
+  transform: scale(1.05, 1.05);
+}
+.icons-contact .second-link:hover {
+  color: white;
+  background-color: #b197fc;
+  transform: scale(1.05, 1.05);
+}
+footer .square2 {
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  background-color: transparent;
+  border: 5px solid rgba(0, 0, 0, 0.39);
+}
+
+@keyframes a_2 {
+  from {
+    scale: 0;
+    opacity: 1;
+    translate: 0 0;
+  }
+  to {
+    rotate: 1turn;
+    opacity: 0;
+    scale: 1;
+    translate: 250px 0;
+  }
+}
+
+/*^ --------------------------------------> ​‌‍‌​‌‍‌𝗘𝗻𝗱 𝗼𝗳 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗽𝗮𝗴𝗲​​ <------------------------------ */
+
+/*# ------------------------------------------> ​‌‍‌‍𝗠𝗲𝗱𝗶𝗮 𝗤𝘂𝗲𝗿𝘆𝘀​ <-----------------------------*/
+@media (max-width: 600px) {
+  .Head .square {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media (max-width: 750px) {
+  .Head .my-image h1 {
+    text-align: center;
+    font-size: 1.2em;
+  }
+  .Head .my-image .YamenImage {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 750px) {
+  .about .about-first h2 {
+    font-size: 0.9em;
+    text-align: center;
+  }
+  .about .about-first img {
+    width: 150px;
+    height: 150px;
+    margin: 0px 20px;
+  }
+  .about .about-second img {
+    width: 150px;
+    height: 150px;
+    margin: 0px 20px;
+  }
+  .about .about-second h2 {
+    font-size: 0.9em;
+    margin-left: 30px;
+  }
+  .about .about-third h2 {
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0px 20px;
+  }
+  .about .about-third img {
+    width: 150px;
+    height: 100px;
+    margin: 0px 20px;
+  }
+  .icons-contact {
+    font-size: 0.7em;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+  }
+  .icons-contact a {
+    width: 12em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .Contact .square2 {
+    width: 30px;
+    height: 30px;
+  }
+  .Head .links a {
+    font-size: 1em;
+  }
+  @media (max-width: 450px) {
+    .Head .links a {
+      font-size: 15px;
+    }
+    .Head .Yamen-logo {
+      width: 20%;
+    }
+    .Head .links {
+      margin-top: 6px;
+    }
+  }
+}
